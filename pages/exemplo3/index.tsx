@@ -1,9 +1,15 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import Link from 'next/link'
 
 const Exemplo3: NextPage = ({repositorios, data}: InferGetStaticPropsType<typeof getStaticProps >) => {
   return (
     <div>
+      <Link href="/">
+        <a>voltar</a>
+     </Link>
+     <div>
       exemplo3 em typescript: {data}
+     </div>
       <ul>
         {repositorios.map((repo: any)=>(
           <li key={repo}>{repo}</li>

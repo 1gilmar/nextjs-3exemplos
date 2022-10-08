@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 
 const Exemplo1: NextPage = () => {
@@ -17,7 +18,12 @@ const Exemplo1: NextPage = () => {
 
   return (
     <div>
-      exemplo1 em typescript
+     <Link href="/">
+      <a>voltar</a>
+     </Link>
+     <div>
+      exemplo1 em typescript: {new Date().toISOString()}
+     </div>
       <ul>
         {repositorio.map((repo)=>( 
           <li key={repo}>{repo}</li> 

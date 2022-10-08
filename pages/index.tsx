@@ -16,12 +16,12 @@ const Home: NextPage = () => {
         </li> 
         <li>
           <Link href="/exemplo2">
-            <a>exemplo2</a>
+            <a>exemplo2 GetServerSideProps</a>
           </Link>
         </li>
         <li>
           <Link href="/exemplo3">
-            <a>exemplo3</a>
+            <a>exemplo3 GetStaticProps</a>
           </Link>
         </li>
       </ul>

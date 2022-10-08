@@ -1,10 +1,15 @@
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-
+import Link from 'next/link'
 
 export default function Exemplo2({ repositorios, data }: InferGetServerSidePropsType<typeof getServerSideProps>){
   return (
     <div>
+      <Link href="/">
+      <a>votar</a>
+     </Link>
+     <div>
       exemplo2 em typescript: {data}
+     </div>
       <ul>
         {repositorios.map((repo: any)=>(
           <li key={repo}>{repo}</li>
